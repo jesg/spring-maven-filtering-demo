@@ -1,0 +1,12 @@
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://www.springframework.org/schema/beans 
+http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+	<bean id="dog2" class="com.gowan.Dog" >
+		<constructor-arg index="0" value="yip" />
+		<constructor-arg index="1" value="${dog.name}"/>
+	</bean>
+ 	 
+</beans>
